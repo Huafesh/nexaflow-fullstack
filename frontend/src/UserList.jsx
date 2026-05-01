@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
 import {
   AlertTriangle,
-  Building2,
+  IdCard,
   Mail,
-  MapPin,
-  Phone,
   RefreshCw,
   UserRound,
   Users,
@@ -13,7 +11,7 @@ import InteractiveSurface from './InteractiveSurface';
 import Reveal, { RevealGroup } from './Reveal';
 
 async function fetchUsers() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const response = await fetch('http://localhost:5000/api/users');
 
   if (!response.ok) {
     throw new Error('No se pudo cargar el directorio.');
@@ -123,31 +121,25 @@ function UserList() {
       {!loading && !error && (
         <div className="user-grid">
           {users.map((user, index) => (
-            <Reveal key={user.id} delay={index < 6 ? index * 80 + 80 : 40} rootMargin="0px" threshold={0}>
+            <Reveal key={user._id || index} delay={index < 6 ? index * 80 + 80 : 40} rootMargin="0px" threshold={0}>
               <InteractiveSurface as="article" className="user-card" variant="card">
                 <div className="user-avatar">
                   <UserRound aria-hidden="true" />
                 </div>
                 <div className="user-main">
-                  <h2>{user.name}</h2>
-                  <p>{user.company.name}</p>
+                  <h2>{user.nombre}</h2>
+                  <p>{user.empresa}</p>
                 </div>
                 <div className="user-detail">
                   <Mail size={17} aria-hidden="true" />
-                  <a href={`mailto:${user.email}`}>{user.email}</a>
+                  <a href={`mailto:${user.correo}`}>{user.correo}</a>
                 </div>
-                <div className="user-detail">
-                  <Phone size={17} aria-hidden="true" />
-                  <span>{user.phone}</span>
-                </div>
-                <div className="user-detail">
-                  <MapPin size={17} aria-hidden="true" />
-                  <span>{user.address.city}</span>
-                </div>
-                <div className="user-detail">
-                  <Building2 size={17} aria-hidden="true" />
-                  <span>{user.website}</span>
-                </div>
+                {user.dni && (
+                  <div className="user-detail">
+                    <IdCard size={17} aria-hidden="true" />
+                    <span>DNI: {user.dni}</span>
+                  </div>
+                )}
               </InteractiveSurface>
             </Reveal>
           ))}

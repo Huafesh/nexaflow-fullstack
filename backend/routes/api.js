@@ -63,6 +63,17 @@ router.post('/register', async (req, res) => {
   }
 });
 
+// Ruta GET para obtener todos los usuarios
+router.get('/users', async (req, res) => {
+  try {
+    const users = await User.find().sort({ fechaRegistro: -1 });
+    res.json(users);
+  } catch (error) {
+    console.error('Error al obtener usuarios:', error);
+    res.status(500).json({ error: 'Error al obtener usuarios' });
+  }
+});
+
 // Ruta GET de prueba para verificar que la API responde
 router.get('/ping', (req, res) => {
   res.json({ message: 'API funcionando correctamente' });
