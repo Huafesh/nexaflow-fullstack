@@ -182,3 +182,11 @@
     border-right-color: var(--border);
   }
 }
+
+/* PhoneInput custom styles */
+.PhoneInput { display: flex; align-items: center; width: 100%; }
+.PhoneInputCountry { margin-right: 12px; display: flex; align-items: center; }
+.PhoneInputCountryIcon { width: 24px; height: 16px; box-shadow: 0 0 0 1px rgba(255,255,255,0.2); }
+.PhoneInputCountrySelectArrow { opacity: 0.5; margin-left: 6px; }
+.PhoneInputInput { flex: 1; background: transparent; border: none; color: inherit; font-family: inherit; font-size: inherit; outline: none; padding: 0; }
+.PhoneInputInput::placeholder { color: rgba(255,255,255,0.4); }

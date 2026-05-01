@@ -14,6 +14,8 @@ import {
 import InteractiveSurface from './InteractiveSurface';
 import Reveal from './Reveal';
 import Typewriter from './Typewriter';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const initialForm = {
   nombre: '',
@@ -256,20 +258,21 @@ function SimpleForm() {
             {errors.dni && <span className="field-error">{errors.dni}</span>}
           </div>
 
-          <div className="field-group">
+          <div className="field-group phone-field-group">
             <label htmlFor="telefono">Teléfono de contacto (Opcional)</label>
             <div className={`field-control ${errors.telefono ? 'has-error' : ''}`}>
-              <Phone size={18} aria-hidden="true" />
-              <input
+              <PhoneInput
                 id="telefono"
-                type="tel"
                 name="telefono"
                 value={formData.telefono}
-                onChange={handleChange}
-                placeholder="987654321"
+                onChange={(value) => {
+                  setFormData((currentData) => ({ ...currentData, telefono: value || '' }));
+                  setErrors((currentErrors) => ({ ...currentErrors, telefono: '' }));
+                  setMessage(null);
+                }}
+                defaultCountry="PE"
+                placeholder="987 654 321"
                 disabled={isSubmitting}
-                inputMode="numeric"
-                pattern="[0-9]*"
               />
             </div>
           </div>
