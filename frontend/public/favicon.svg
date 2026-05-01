@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NexaFlow">
+  <defs>
+    <linearGradient id="mark-gradient" x1="12" x2="52" y1="10" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4BF"/>
+      <stop offset="0.55" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A5B4FC"/>
+    </linearGradient>
+    <linearGradient id="mark-glow" x1="15" x2="51" y1="52" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#4F46E5" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#mark-gradient)"/>
+  <path fill="#fff" fill-opacity="0.22" d="M13 18.5c0-3.04 2.46-5.5 5.5-5.5h27.7c3.04 0 5.5 2.46 5.5 5.5v1.2c-8.15-1.9-16.36-.4-24.58 4.5-4.64 2.77-9.35 4.12-14.12 4.06v-9.76Z"/>
+  <path fill="#fff" d="M18 42.2c0-1.48 1.2-2.68 2.68-2.68h8.55c1.55 0 2.82-1.26 2.82-2.82v-9.4c0-1.56 1.26-2.82 2.82-2.82h8.45c1.48 0 2.68 1.2 2.68 2.68s-1.2 2.68-2.68 2.68h-5.9v6.86c0 4.52-3.67 8.18-8.19 8.18h-8.55A2.68 2.68 0 0 1 18 42.2Z"/>
+  <path fill="url(#mark-glow)" d="M18 28.9c0-1.48 1.2-2.68 2.68-2.68h7.02c1.48 0 2.68 1.2 2.68 2.68s-1.2 2.68-2.68 2.68h-7.02A2.68 2.68 0 0 1 18 28.9Zm17.86 13.3c0-1.48 1.2-2.68 2.68-2.68h4.78c1.48 0 2.68 1.2 2.68 2.68s-1.2 2.68-2.68 2.68h-4.78a2.68 2.68 0 0 1-2.68-2.68Z"/>
+  <circle cx="20.8" cy="28.9" r="2.6" fill="#fff"/>
+  <circle cx="43.2" cy="42.2" r="2.6" fill="#fff"/>
+</svg>

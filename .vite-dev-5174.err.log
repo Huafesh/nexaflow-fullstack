@@ -1,0 +1,96 @@
+[2m2:55:22 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mInvalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[2m2:55:22 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mInvalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
+1. You might have mismatching versions of React and the renderer (such as React DOM)
+2. You might be breaking the Rules of Hooks
+3. You might have more than one copy of React in the same app
+See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
+[2m2:55:22 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31m[Unhandled error] [1mTypeError[22m: Cannot read properties of null (reading 'useMemo')
+[39m > exports.useMemo node_modules/react/cjs/react.development.js:1251:33
+ > CanvasImpl node_modules/@react-three/fiber/dist/react-three-fiber.esm.js:40:8
+ > Object.react_stack_bottom_frame node_modules/.vite/deps/react-dom_client.js?v=115528ed:12867:12
+ > renderWithHooks node_modules/.vite/deps/react-dom_client.js?v=115528ed:4212:19
+ > updateFunctionComponent node_modules/.vite/deps/react-dom_client.js?v=115528ed:5568:16
+ > beginWork node_modules/.vite/deps/react-dom_client.js?v=115528ed:6139:20
+ > runWithFiberInDEV node_modules/.vite/deps/react-dom_client.js?v=115528ed:850:66
+ > performUnitOfWork node_modules/.vite/deps/react-dom_client.js?v=115528ed:8428:92
+ > workLoopSync node_modules/.vite/deps/react-dom_client.js?v=115528ed:8324:37
+ > renderRootSync node_modules/.vite/deps/react-dom_client.js?v=115528ed:8308:6
+
+[2m2:55:22 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mAn error occurred in the <CanvasImpl> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Color: Unknown color transparent
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Color: Unknown color transparent
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:06:29 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:10 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m3:08:10 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Color: Unknown color transparent
+[2m3:08:10 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:12 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m3:08:12 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.Color: Unknown color transparent
+[2m3:08:12 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:15 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:15 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:16 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:16 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:16 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:17 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:17 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:08:18 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:22 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:23 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:24 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:24 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:26 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:09:30 a. m.[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m3:11:44 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "./WorkspaceVisual" from "src/App.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/src/App.jsx[39m:33:28
+[33m  8  |  import InteractiveSurface from "./InteractiveSurface";
+  9  |  import Reveal, { RevealGroup } from "./Reveal";
+  10 |  import WorkspaceVisual from "./WorkspaceVisual";
+     |                               ^
+  11 |  import nexaFlowMark from "./assets/nexaflow-mark.svg";
+  12 |  var _jsxFileName = "C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/src/App.jsx";[39m
+[2m3:11:44 a. m.[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./WorkspaceVisual" from "src/App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/src/App.jsx[39m:33:28
+[33m  8  |  import InteractiveSurface from "./InteractiveSurface";
+  9  |  import Reveal, { RevealGroup } from "./Reveal";
+  10 |  import WorkspaceVisual from "./WorkspaceVisual";
+     |                               ^
+  11 |  import nexaFlowMark from "./assets/nexaflow-mark.svg";
+  12 |  var _jsxFileName = "C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/src/App.jsx";[39m
+      at TransformPluginContext._formatLog (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:30375:39)
+      at TransformPluginContext.error (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:30372:14)
+      at normalizeUrl (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:27654:18)
+      at async file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:27717:30
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:27685:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:30164:14)
+      at async loadAndTransform (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:24512:26)
+[2m3:11:44 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m3:11:49 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/HeroSceneFallback.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m3:29:12 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Huafesh\OneDrive\Desktop\tarea\mi-tarea-react\node_modules\@react-three\drei\index.js'
+    at Object.readFileSync (node:fs:440:20)
+    at extractExportsData (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31797:26)
+    at async file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31564:23
+    at async Promise.all (index 0)
+    at async prepareRolldownOptimizerRun (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31562:2)[39m
+[2m3:29:12 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m3:31:06 a. m.[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\Huafesh\OneDrive\Desktop\tarea\mi-tarea-react\node_modules\@react-three\drei\index.js'
+    at Object.readFileSync (node:fs:440:20)
+    at extractExportsData (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31797:26)
+    at async file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31564:23
+    at async Promise.all (index 0)
+    at async prepareRolldownOptimizerRun (file:///C:/Users/Huafesh/OneDrive/Desktop/tarea/mi-tarea-react/node_modules/vite/dist/node/chunks/node.js:31562:2)[39m
