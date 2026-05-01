@@ -183,20 +183,39 @@
   }
 }
 
-/* PhoneInput custom styles */
-.PhoneInput { display: flex; align-items: center; width: 100%; }
-.PhoneInputCountry { margin-right: 12px; display: flex; align-items: center; }
-.PhoneInputCountryIcon { width: 24px; height: 16px; box-shadow: 0 0 0 1px rgba(255,255,255,0.2); }
-.PhoneInputCountrySelectArrow { opacity: 0.5; margin-left: 6px; }
-.PhoneInputInput { flex: 1; background: transparent; border: none; color: inherit; font-family: inherit; font-size: inherit; outline: none; padding: 0; }
-.PhoneInputInput::placeholder { color: rgba(255,255,255,0.4); }
-
-.PhoneInputCountrySelect { background-color: #1a202c; color: white; border-radius: 8px; padding: 4px; }
-.PhoneInputCountrySelect option { background-color: #1a202c; color: white; }
-
-/* Improved PhoneInput styling */
-.field-control .PhoneInputInput { min-height: 46px !important; width: 100% !important; background-color: transparent !important; border: none !important; color: var(--ink) !important; box-shadow: none !important; }
-.field-control .PhoneInputCountry { margin-right: 12px !important; }
-.field-control .PhoneInputCountrySelect { background: var(--surface) !important; color: var(--ink) !important; border: 1px solid var(--line) !important; border-radius: var(--radius-sm) !important; }
-.field-control .PhoneInputCountryIcon { box-shadow: 0 0 0 1px var(--line) !important; }
-.field-control .PhoneInputCountrySelectArrow { color: var(--muted) !important; opacity: 0.8 !important; }
+/* PhoneInput custom styles (safely scoped) */
+.PhoneInput { 
+  display: flex; 
+  align-items: center; 
+  width: 100%; 
+}
+.PhoneInputCountry { 
+  margin-right: 12px; 
+  display: flex; 
+  align-items: center; 
+}
+.PhoneInputCountryIcon { 
+  width: 24px; 
+  height: 16px; 
+  box-shadow: 0 0 0 1px var(--line); 
+}
+.PhoneInputCountrySelectArrow { 
+  opacity: 0.5; 
+  margin-left: 6px; 
+  color: var(--muted);
+}
+.PhoneInputInput { 
+  flex: 1; 
+  width: 100%;
+  min-height: 46px;
+  background: transparent !important; 
+  border: none !important; 
+  color: var(--ink) !important; 
+  font-family: inherit; 
+  font-size: inherit; 
+  outline: none !important; 
+  padding: 0 !important; 
+}
+.PhoneInputInput::placeholder { 
+  color: var(--muted); 
+}
