@@ -190,19 +190,43 @@
   width: 100%; 
 }
 .PhoneInputCountry { 
-  margin-right: 12px; 
+  position: relative;
+  align-self: stretch;
   display: flex; 
   align-items: center; 
+  margin-right: 12px; 
+}
+.PhoneInputCountrySelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+  appearance: menulist;
 }
 .PhoneInputCountryIcon { 
   width: 24px; 
   height: 16px; 
   box-shadow: 0 0 0 1px var(--line); 
+  display: block;
 }
 .PhoneInputCountrySelectArrow { 
-  opacity: 0.5; 
-  margin-left: 6px; 
-  color: var(--muted);
+  display: block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-style: solid;
+  border-color: var(--muted);
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  border-left-width: 0;
+  border-right-width: 1px;
+  transform: rotate(45deg);
+  opacity: 0.5;
 }
 .PhoneInputInput { 
   flex: 1; 
