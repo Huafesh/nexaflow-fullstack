@@ -9,6 +9,7 @@ import {
   UserRound,
   UserPlus,
   IdCard,
+  Phone,
 } from 'lucide-react';
 import InteractiveSurface from './InteractiveSurface';
 import Reveal from './Reveal';
@@ -19,6 +20,7 @@ const initialForm = {
   correo: '',
   empresa: '',
   dni: '',
+  telefono: '',
 };
 
 function SimpleForm() {
@@ -65,8 +67,8 @@ function SimpleForm() {
   const handleChange = (event) => {
     let { name, value } = event.target;
     
-    // Solo permitir números en el DNI
-    if (name === 'dni') {
+    // Solo permitir números en el DNI y teléfono
+    if (name === 'dni' || name === 'telefono') {
       value = value.replace(/\D/g, '');
     }
 
@@ -126,7 +128,7 @@ function SimpleForm() {
             type: 'success',
             text: '¡Registro completado! Hemos guardado tus datos de forma segura.'
           });
-          setFormData({ nombre: '', correo: '', empresa: '', dni: '' });
+          setFormData({ nombre: '', correo: '', empresa: '', dni: '', telefono: '' });
         } else {
           setMessage({
             type: 'error',
@@ -252,6 +254,24 @@ function SimpleForm() {
               />
             </div>
             {errors.dni && <span className="field-error">{errors.dni}</span>}
+          </div>
+
+          <div className="field-group">
+            <label htmlFor="telefono">Teléfono de contacto (Opcional)</label>
+            <div className={`field-control ${errors.telefono ? 'has-error' : ''}`}>
+              <Phone size={18} aria-hidden="true" />
+              <input
+                id="telefono"
+                type="tel"
+                name="telefono"
+                value={formData.telefono}
+                onChange={handleChange}
+                placeholder="987654321"
+                disabled={isSubmitting}
+                inputMode="numeric"
+                pattern="[0-9]*"
+              />
+            </div>
           </div>
 
           {message && (

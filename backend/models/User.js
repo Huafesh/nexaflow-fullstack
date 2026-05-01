@@ -20,6 +20,10 @@ const UserSchema = new mongoose.Schema({
   dni: {
     type: String,
     trim: true
+  },
+  telefono: {
+    type: String,
+    trim: true
   }
 }, {
   timestamps: true // Agrega createdAt y updatedAt automáticamente

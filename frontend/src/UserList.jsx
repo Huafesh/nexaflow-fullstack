@@ -3,6 +3,7 @@ import {
   AlertTriangle,
   IdCard,
   Mail,
+  Phone,
   RefreshCw,
   UserRound,
   Users,
@@ -138,6 +139,12 @@ function UserList() {
                   <div className="user-detail">
                     <IdCard size={17} aria-hidden="true" />
                     <span>DNI: {user.dni}</span>
+                  </div>
+                )}
+                {user.telefono && (
+                  <div className="user-detail">
+                    <Phone size={17} aria-hidden="true" />
+                    <span>{user.telefono}</span>
                   </div>
                 )}
               </InteractiveSurface>

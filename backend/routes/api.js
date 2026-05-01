@@ -6,7 +6,7 @@ const router = express.Router();
 // Ruta POST para procesar el registro
 router.post('/register', async (req, res) => {
   try {
-    const { nombre, correo, empresa, dni } = req.body;
+    const { nombre, correo, empresa, dni, telefono } = req.body;
 
     // Validación básica en el backend
     if (!nombre || !correo || !empresa) {
@@ -22,6 +22,9 @@ router.post('/register', async (req, res) => {
     if (dni) {
       orConditions.push({ dni });
     }
+    if (telefono) {
+      orConditions.push({ telefono });
+    }
 
     const existingUser = await User.findOne({ $or: orConditions });
 
@@ -29,6 +32,7 @@ router.post('/register', async (req, res) => {
       let duplicatedField = '';
       if (existingUser.correo === correo) duplicatedField = 'correo';
       else if (existingUser.dni === dni) duplicatedField = 'DNI';
+      else if (telefono && existingUser.telefono === telefono) duplicatedField = 'teléfono';
       else if (existingUser.nombre === nombre) duplicatedField = 'nombre';
       else if (existingUser.empresa === empresa) duplicatedField = 'nombre de empresa';
 
@@ -43,7 +47,8 @@ router.post('/register', async (req, res) => {
       nombre,
       correo,
       empresa,
-      dni
+      dni,
+      telefono
     });
 
     await newUser.save();
