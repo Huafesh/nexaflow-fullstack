@@ -16,7 +16,6 @@ import Reveal from './Reveal';
 import Typewriter from './Typewriter';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import CustomCountrySelect from './CustomCountrySelect';
 
 const initialForm = {
   nombre: '',
@@ -272,7 +271,6 @@ function SimpleForm() {
                   setMessage(null);
                 }}
                 defaultCountry="PE"
-                countrySelectComponent={CustomCountrySelect}
                 placeholder="987 654 321"
                 disabled={isSubmitting}
               />
