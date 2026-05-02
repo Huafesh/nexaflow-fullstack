@@ -21,12 +21,10 @@ Este proyecto utiliza el stack **MERN** modernizado, completamente contenerizado
 
 ## 📸 Vistazo a la Interfaz
 
-*(Crea una carpeta llamada `screenshots` en la raíz de este proyecto y guarda tus capturas con los nombres `desktop.png` y `mobile-form.png` para que aparezcan aquí)*
-
 ![Vista de Escritorio - NexaFlow](./screenshots/desktop.png)
 *Diseño responsivo y elegante en la vista de escritorio.*
 
-![Formulario de Registro Móvil](./screenshots/mobile-form.png)
+![Formulario de Registro Móvil](./screenshots/mobile-form.jpg)
 *Formulario con validación inteligente de teléfono en vista móvil.*
 
 ## ⚙️ Cómo Ejecutar el Proyecto
