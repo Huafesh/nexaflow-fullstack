@@ -16,6 +16,8 @@ import Reveal from './Reveal';
 import Typewriter from './Typewriter';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import { getExampleNumber } from 'libphonenumber-js/min';
+import examples from 'libphonenumber-js/examples.mobile.json';
 
 const initialForm = {
   nombre: '',
@@ -32,6 +34,7 @@ function SimpleForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isErasing, setIsErasing] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
+  const [phoneCountry, setPhoneCountry] = useState('PE');
 
   const messageRef = useRef(null);
 
@@ -270,8 +273,13 @@ function SimpleForm() {
                   setErrors((currentErrors) => ({ ...currentErrors, telefono: '' }));
                   setMessage(null);
                 }}
+                onCountryChange={(c) => setPhoneCountry(c || 'PE')}
                 defaultCountry="PE"
-                placeholder="987 654 321"
+                placeholder={
+                  phoneCountry 
+                    ? getExampleNumber(phoneCountry, examples)?.formatNational() || "987 654 321" 
+                    : "987 654 321"
+                }
                 disabled={isSubmitting}
               />
             </div>
